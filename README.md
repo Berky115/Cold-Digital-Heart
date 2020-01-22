@@ -1,17 +1,12 @@
 ## ColdDigitalHeart
-A React/Redux website. Houses personal blog, links to prior projects and means of contact.
+Houses personal blog, links to prior projects and means of contact for Andrew Facchiano.
 
  ### Technical notes:
-Uses React/Redux accordingly to create a single page app that allows users to navigate to prior views.
+Uses React.js to create a single page app that allows users to navigate with ease.
 Takes advantage of the Animate.css library.
 Uses HTML5 canvas to consistently display colorful object pool.
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+## Scripts
 
 ### `npm start`
 

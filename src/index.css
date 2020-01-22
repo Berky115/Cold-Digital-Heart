@@ -1,206 +1,242 @@
+:root {
+
+	/* --main-pop-color: #DE1D1E;
+	--main-black-color: #020202;
+	--main-white-color: #FBFBFB;
+	--off-white-color: #CBC7BB;
+	--hover-color: #4C3935;  */
+
+	--main-pop-color: #7293A0;
+	--main-black-color: #373F51;
+	--main-white-color: #FFFFFA;
+	--off-white-color: #D8DBE2;
+	--hover-color: #A9BCD0; 
+
+  }
+
 * {
-  font-family: 'Indie Flower', cursive;
-  padding:0;
-  margin:0;
-  text-decoration: none;
+	font-family: 'Indie Flower', cursive;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
 }
 
-html{
-  font:14px normal Arial, sans-serif;
+html {
+	font: 14px normal Arial, sans-serif;
 }
 
-body{
-  padding:60px;
-  text-align: center;
+body {
+	padding: 60px;
+	text-align: center;
+	min-height: 100%;
+	display:flex; 
+	flex-direction:column; 
 }
 
-ul{
-  list-style:none;
-  display: inline-block;
+ul {
+	list-style: none;
+	display: inline-block;
 }
 
-p{
-  padding-top:15px;
-  font-size:12px;
+p {
+	padding-top: 15px;
+	font-size: 12px;
 }
 
-ul li{
-  display: inline-block;
-  padding: 10px 20px;
-  cursor:pointer;
-  background-color:#eee;
-  color:black;
-  transition:0.3s;
+ul li {
+	display: inline-block;
+	padding: 10px 20px;
+	cursor: pointer;
+	color: var(--main-black-color);
+	transition: 0.3s;
 }
 
-ul li:hover{
-  background-color:#ff9999;
-  padding: 10px 120px;
+ul li:hover {
+	background-color: var(--hover-color);
+	padding: 10px 120px;
 }
 
-ul li.aboutMe{
-  font-size: 12px;
-  display: block;
-  background-color:#eee;
-  color:#fff;
+/* ul li.aboutMe {
+	font-size: 12px;
+	display: block;
+	background-color: var(--off-white-color);
+	color: var(--main-white-color);
 
-  text-decoration: none;
-  text-align:center;
+	text-decoration: none;
+	text-align: center;
+} */
+
+ul li.aboutMe  {
+	font-size: 24px;
+	display: block;
+	background-color:  var(--off-white-color);
+	color: var(--main-black-color);
+	text-decoration: none;
+	text-align: center;
 }
 
-
-ul li.aboutMe:hover{
-font-size: 24px;
-display: block;
-background-color:#e60000;
-color:fff;
-text-decoration: none;
-  text-align:center;
+ul li.project {
+	display: block;
+	background-color: var(--off-white-color);
+	color: var(--main-white-color);
+	transition: 0.3s;
 }
 
-ul li.project{
-  display: block;
-  background-color:#eee;
-  color:#fff;
-  transition:0.3s;
+ul li.project h1 {
+	display: block;
+	padding: 10px 20px;
+	cursor: pointer;
+	color: var(--main-white-color);
+	transition: 0.3s;
 }
 
-ul li.project h1{
-  display: block;
-  padding: 10px 20px;
-  cursor:pointer;
-  background-color:#eee;
-  color:#fff;
-  transition:0.3s;
+ul li.project:hover {
+	background-color:  var(--main-pop-color);;
+	color: var(--main-white-color);
+	text-decoration: none;
 }
 
-ul li.project:hover{
-  background-color:#e60000;
-  color:fff;
-   text-decoration: none;
+ul li.project:hover h1 {
+	background-color:   var(--main-pop-color);
+	color: var(--main-white-color);
+	text-decoration: none;
 }
 
-ul li.project:hover h1{
-  background-color:#e60000;
-  color:fff;
-  text-decoration: none;
+.active li {
+	background-color:   var(--main-pop-color);;
+	color: var(--main-white-color);
 }
 
-.active li{
-  background-color:#e60000;
-  color:white;
-}
-
-.active li:hover{
-  background-color:#e60000;
-  color:white;
+.active li:hover {
+	background-color:   var(--main-pop-color);;
+	color: var(--main-white-color);
 }
 
 ul.header {
-background-color: #eee;
-font-weight: bold;
-font-size: 28px;
+	background-color: var(--main-white-color);
+	font-weight: bold;
+	font-size: 28px;
 }
 
 ul.header li a {
-color: #FFF;
-font-weight: bold;
-text-decoration: none;
-padding: 20px;
-display: inline-block;
+	color: var(--main-white-color);
+	font-weight: bold;
+	text-decoration: none;
+	padding: 20px;
+	display: inline-block;
 }
 
-.heartStyle{
-  width:2.5em;
-  height:2.5em
+.heartStyle {
+	width: 2.5em;
+	height: 2.5em;
 }
 
 .contactNode {
-  width:50px;
-  height:50px;
+	width: 50px;
+	height: 50px;
 }
 
 ul li.blogEntry {
-
-margin: 0 0 25px 0;
-border-radius: 15px;
-display: block;
-padding: 10px 20px;
-max-width: 1080px;
-cursor:pointer;
-background-color:#eee;
-color:black;
-transition:0.3s;
+	margin: 0 0 25px 0;
+	border-radius: 15px;
+	display: block;
+	padding: 10px 20px;
+	max-width: 1080px;
+	cursor: pointer;
+	background-color: var(--off-white-color);
+	transition: 0.3s;
 }
 
 ul li.halloweenEntry {
-margin: 0 0 25px 0;
-border-radius: 15px;
-display: block;
-padding: 10px 20px;
-max-width: 1080px;
-cursor:pointer;
-background-color:#eee;
-color:black;
-transition:0.3s;
+	margin: 0 0 25px 0;
+	border-radius: 15px;
+	display: block;
+	padding: 10px 20px;
+	max-width: 1080px;
+	cursor: pointer;
+	background-color: var(--main-white-color);
+	color: var(--main-black-color);
+	transition: 0.3s;
 }
 
 ul li.halloweenEntry:hover {
-margin: 0 0 25px 0;
-border-radius: 15px;
-display: block;
-padding: 10px 20px;
-max-width: 1080px;
-cursor:pointer;
-background-color:black;
-color:orange;
-transition:0.3s;
+	margin: 0 0 25px 0;
+	border-radius: 15px;
+	display: block;
+	padding: 10px 20px;
+	max-width: 1080px;
+	cursor: pointer;
+	background-color: var(--main-black-color);
+	color: orange;
+	transition: 0.3s;
 }
 
 .blogTitle {
-  font-weight: bold;
-  font-size: 24px;
-  align-self: center;
+	font-weight: bold;
+	font-size: 24px;
+	align-self: center;
 }
 
 .blogDate {
-  display: flex;
-  flex-direction: column;
-  align-self: baseline;
+	display: flex;
+	flex-direction: column;
+	align-self: baseline;
 }
 
 .flexcontainer {
-  display: flex;
-  text-align: left;
+	display: flex;
+	text-align: left;
 }
 
 .titleText {
-  font-size: 36px;
+	font-size: 36px;
 }
 
 .flex-item {
-  margin-left: auto;
-  order: 2;
+	margin-left: auto;
+	order: 2;
 }
 
 .blogText {
-text-align: left;
-font-size: 24px;
-font-family: 'Coming Soon', cursive;
+	text-align: left;
+	font-size: 24px;
+	font-family: 'Coming Soon', cursive;
 }
 
 .halloweenText {
-text-align: center;
-font-size: 24px;
-font-family: 'Coming Soon', cursive;
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Coming Soon', cursive;
 }
 
 .comicImage {
-max-width: 100%;
-   height: auto;
-   width: auto\9; /* ie8 */
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
 }
 
-body, html { 
-  margin: 0px;
+body, html {
+	height: 100%;
+	margin: 0px;
+}
+
+.content {
+	padding: 20px;
+  }
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-body {
+    flex-grow: 1;
+}
+
+.footer {
+	flex-shrink: 0;
+	background-color: rgb(75, 70, 74);
+	color: #fff;
+	padding: 20px;
 }

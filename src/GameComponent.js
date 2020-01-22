@@ -10,7 +10,6 @@ function Invader(speed, radius, positionX, positionY, noteColor) {
   this.detectedState = false;
 }
 
-
 class GameComponent extends React.Component {
   myRef = React.createRef();
   state = {
@@ -25,9 +24,9 @@ class GameComponent extends React.Component {
     WIDTH: window.screen.availWidth,
     HEIGHT: 100,
     colors: [
-        "red",
-        "#aaa",
-        "black"
+        "#7293A0",
+        "#373F51",
+        "#FFFFFA"
     ],
     enemies:[],
   };
