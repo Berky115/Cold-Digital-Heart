@@ -113,7 +113,7 @@ ul li.project:hover h1 {
 }
 
 ul.header {
-	background-color: var(--main-white-color);
+	background-color: var(--off-white-color);
 	font-weight: bold;
 	font-size: 28px;
 }
