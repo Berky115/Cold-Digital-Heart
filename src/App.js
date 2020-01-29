@@ -28,11 +28,6 @@ class Projects extends React.Component {
 			<div>
 				<ul>
 					<li className="project">
-						<a href="audioInvaders/index.html">
-							<h1>Audio Invaders</h1>
-						</a>
-					</li>
-					<li className="project">
 						<a href="https://berkyland.wordpress.com/author/berkyland/">
 							<h1>Berkyland Blog (old)</h1>
 						</a>
@@ -55,6 +50,11 @@ class Projects extends React.Component {
 					<li className="project">
 						<a href="https://nitwic.podbean.com">
 							<h1>Nitwic!</h1>
+						</a>
+					</li>
+					<li className="project">
+						<a href="https://github.com/Berky115/life-coach-vergil">
+							<h1>Life Coach Vergil</h1>
 						</a>
 					</li>
 				</ul>
@@ -134,6 +134,7 @@ class App extends React.Component {
 		return (
 			<div className='wrapper'>
 				<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"></link>
+				<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet"></link>
 				<link
 					href="https://fonts.googleapis.com/css?family=Architects+Daughter|Coming+Soon|Gloria+Hallelujah"
 					rel="stylesheet"

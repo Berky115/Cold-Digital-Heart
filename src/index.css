@@ -1,11 +1,5 @@
 :root {
 
-	/* --main-pop-color: #DE1D1E;
-	--main-black-color: #020202;
-	--main-white-color: #FBFBFB;
-	--off-white-color: #CBC7BB;
-	--hover-color: #4C3935;  */
-
 	--main-pop-color: #7293A0;
 	--main-black-color: #373F51;
 	--main-white-color: #FFFFFA;
@@ -51,20 +45,16 @@ ul li {
 	transition: 0.3s;
 }
 
-ul li:hover {
+@media only screen and (min-width: 900px) {
+	ul li:hover {
+		padding: 10px 120px;
+	}
+  }
+
+  ul li:hover {
 	background-color: var(--hover-color);
-	padding: 10px 120px;
-}
-
-/* ul li.aboutMe {
-	font-size: 12px;
-	display: block;
-	background-color: var(--off-white-color);
 	color: var(--main-white-color);
-
-	text-decoration: none;
-	text-align: center;
-} */
+}
 
 ul li.aboutMe  {
 	font-size: 24px;
@@ -86,7 +76,7 @@ ul li.project h1 {
 	display: block;
 	padding: 10px 20px;
 	cursor: pointer;
-	color: var(--main-white-color);
+	color: var(--main-black-color);
 	transition: 0.3s;
 }
 
@@ -103,12 +93,12 @@ ul li.project:hover h1 {
 }
 
 .active li {
-	background-color:   var(--main-pop-color);;
+	background-color:   var(--main-pop-color);
 	color: var(--main-white-color);
 }
 
 .active li:hover {
-	background-color:   var(--main-pop-color);;
+	background-color:   var(--main-pop-color);
 	color: var(--main-white-color);
 }
 
@@ -140,34 +130,11 @@ ul li.blogEntry {
 	margin: 0 0 25px 0;
 	border-radius: 15px;
 	display: block;
-	padding: 10px 20px;
-	max-width: 1080px;
+	padding: 20px 80px;
+	max-width: 800px;
 	cursor: pointer;
 	background-color: var(--off-white-color);
-	transition: 0.3s;
-}
-
-ul li.halloweenEntry {
-	margin: 0 0 25px 0;
-	border-radius: 15px;
-	display: block;
-	padding: 10px 20px;
-	max-width: 1080px;
-	cursor: pointer;
-	background-color: var(--main-white-color);
 	color: var(--main-black-color);
-	transition: 0.3s;
-}
-
-ul li.halloweenEntry:hover {
-	margin: 0 0 25px 0;
-	border-radius: 15px;
-	display: block;
-	padding: 10px 20px;
-	max-width: 1080px;
-	cursor: pointer;
-	background-color: var(--main-black-color);
-	color: orange;
 	transition: 0.3s;
 }
 
@@ -203,11 +170,26 @@ ul li.halloweenEntry:hover {
 	font-family: 'Coming Soon', cursive;
 }
 
-.halloweenText {
-	text-align: center;
-	font-size: 24px;
-	font-family: 'Coming Soon', cursive;
+@media only screen and (max-width: 600px) {
+	.blogText {
+		font-size: 16px;
+	}
+	ul li.blogEntry {
+		margin: 0 0 25px 0;
+		border-radius: 15px;
+		display: block;
+		padding: 20px 80px;
+		max-width: 400px;
+		cursor: pointer;
+		background-color: var(--off-white-color);
+		color: var(--main-black-color);
+		transition: 0.3s;
+	}
+	body {
+		padding: 30px;
+	}
 }
+
 
 .comicImage {
 	max-width: 100%;
