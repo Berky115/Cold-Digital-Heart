@@ -5,5 +5,5 @@ import App from './App';
 import Footer from './Footer';
 
 ReactDOM.render(<App  />, document.getElementById('Heart'));
-ReactDOM.render(<Footer />, document.getElementById('Footer'));
+// ReactDOM.render(<Footer />, document.getElementById('Footer'));
 

@@ -56,15 +56,6 @@ ul li {
 	color: var(--main-white-color);
 }
 
-ul li.aboutMe  {
-	font-size: 24px;
-	display: block;
-	background-color:  var(--off-white-color);
-	color: var(--main-black-color);
-	text-decoration: none;
-	text-align: center;
-}
-
 ul li.project {
 	display: block;
 	background-color: var(--off-white-color);
@@ -175,15 +166,8 @@ ul li.blogEntry {
 		font-size: 16px;
 	}
 	ul li.blogEntry {
-		margin: 0 0 25px 0;
-		border-radius: 15px;
-		display: block;
-		padding: 20px 80px;
 		max-width: 400px;
-		cursor: pointer;
-		background-color: var(--off-white-color);
-		color: var(--main-black-color);
-		transition: 0.3s;
+		padding: 20px;
 	}
 	body {
 		padding: 30px;
