@@ -1,5 +1,6 @@
 import React from 'react';
 import email from './resources/contact/email.png';
+import home from './resources/contact/home.png';
 import linkedin from './resources/contact/linkedin.png';
 import  blogData  from './BlogData.json';
 import GameComponent from './GameComponent';
@@ -33,18 +34,18 @@ class Projects extends React.Component {
 						</a>
 					</li>
 					<li className="project">
+						<a href='https://github.com/Berky115'>
+							<h1>Github</h1>
+						</a>
+					</li>
+					<li className="project">
 						<a href="http://www.lensthegame.com/">
 							<h1>Lens</h1>
 						</a>
 					</li>
 					<li className="project">
-						<a href="http://www.adventuretimegamejam.com/submissions/62-the-pit-of-the-ice-king">
-							<h1>Pit of The Ice King</h1>
-						</a>
-					</li>
-					<li className="project">
-						<a href="js/datcat/GGJ_Builds.html">
-							<h1>Dat Cat</h1>
+						<a href="https://github.com/Berky115/life-coach-vergil">
+							<h1>Life Coach Vergil</h1>
 						</a>
 					</li>
 					<li className="project">
@@ -53,8 +54,8 @@ class Projects extends React.Component {
 						</a>
 					</li>
 					<li className="project">
-						<a href="https://github.com/Berky115/life-coach-vergil">
-							<h1>Life Coach Vergil</h1>
+						<a href="http://www.adventuretimegamejam.com/submissions/62-the-pit-of-the-ice-king">
+							<h1>Pit of The Ice King</h1>
 						</a>
 					</li>
 				</ul>
@@ -67,7 +68,7 @@ class Blog extends React.Component {
 	render() {
 		let blogEntries = blogData.postsArray.map(entry => (
 			<li key={entry + Math.random()} className="blogEntry">
-				<div className="flexcontainer">
+				<div >
 					<div className="flex-item blogDate"> {entry.datePosted} </div>
 				</div>
 				<div className="titleText">{entry.postTitle}</div>
@@ -95,22 +96,27 @@ class Blog extends React.Component {
 class Contact extends React.Component {
 	render() {
 		return (
-			<div>
-				<h1> Andrew Facchiano </h1>
-				<div>
-					<a href="mailto:andrewfacchiano@gmail.com">
-						<img alt="e-mail" src={email} className="contactNode"></img>
-						<p> By E-mail at andrewfacchiano@gmail.com </p>
+			<ul className='contact-content'>
+				<li className='contactEntry'>
+				<a href="mailto:andrewfacchiano@gmail.com">
+					<img className='contactTitle' alt="e-mail" src={home} ></img>
 					</a>
-				</div>
+					<p className="contextText"> call me <strong>Andrew Facchiano </strong></p>
+				</li>
 
-				<div>
-					<a href="https://www.linkedin.com/in/andrew-facchiano-0961a761">
-						<img alt="linked in" src={linkedin} className="contactNode"></img>
-						<p> On Linkdin </p>
+				<li className='contactEntry'>
+					<a href="mailto:andrewfacchiano@gmail.com">
+						<img className='contactTitle' alt="e-mail" src={email} ></img>
 					</a>
-				</div>
-			</div>
+					<p className="contextText"> andrewfacchiano@gmail.com </p>
+				</li>
+				<li className='contactEntry'>
+					<a href="https://www.linkedin.com/in/andrew-facchiano-0961a761">
+						<img className='contactTitle' alt="linked in" src={linkedin} ></img>
+					</a>
+					<p className="contextText"> https://tinyurl.com/sg7z6y2</p>
+				</li>
+			</ul>
 		);
 	}
 }
@@ -141,13 +147,15 @@ class App extends React.Component {
 				></link>
 				<main className='page-body'>
 				<GameComponent />
-				<ul className="header">
-					<li onClick={i => this.handleClick(i)}>Home</li>
-					<li onClick={i => this.handleClick(i)}>Blog</li>
-					<li onClick={i => this.handleClick(i)}>Projects</li>
-					<li onClick={i => this.handleClick(i)}>About</li>
-					<li onClick={i => this.handleClick(i)}>Contact</li>
-				</ul>
+				<div className='header-body'>
+					<ul className="header">
+						<li onClick={i => this.handleClick(i)}>Home</li>
+						<li onClick={i => this.handleClick(i)}>Blog</li>
+						<li onClick={i => this.handleClick(i)}>Projects</li>
+						<li onClick={i => this.handleClick(i)}>About</li>
+						<li onClick={i => this.handleClick(i)}>Contact</li>
+					</ul>
+				</div>
 				{current === 'Contact' && <Contact />}
 				{current === 'Blog' && <Blog />}
 				{current === 'Projects' && <Projects />}

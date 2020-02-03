@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	padding: 60px;
+	/* padding: 60px; */
 	text-align: center;
 	min-height: 100%;
 	display:flex; 
@@ -78,7 +78,6 @@ ul li.project:hover {
 }
 
 ul li.project:hover h1 {
-	background-color:   var(--main-pop-color);
 	color: var(--main-white-color);
 	text-decoration: none;
 }
@@ -93,11 +92,16 @@ ul li.project:hover h1 {
 	color: var(--main-white-color);
 }
 
+.header-body {
+	padding: 40px 0 0 0;
+}
 ul.header {
 	background-color: var(--off-white-color);
 	font-weight: bold;
 	font-size: 28px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 ul.header li a {
 	color: var(--main-white-color);
@@ -112,10 +116,7 @@ ul.header li a {
 	height: 2.5em;
 }
 
-.contactNode {
-	width: 50px;
-	height: 50px;
-}
+
 
 ul li.blogEntry {
 	margin: 0 0 25px 0;
@@ -129,6 +130,8 @@ ul li.blogEntry {
 	transition: 0.3s;
 }
 
+
+
 .blogTitle {
 	font-weight: bold;
 	font-size: 24px;
@@ -139,6 +142,37 @@ ul li.blogEntry {
 	display: flex;
 	flex-direction: column;
 	align-self: baseline;
+	width: 7em;
+}
+
+ul li.contactEntry {
+	margin: 0 0 25px 0;
+	display: block;
+	padding: 20px 80px;
+	cursor: pointer;
+	background-color: var(--off-white-color);
+	color: var(--main-black-color);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
+	display: flex;
+}
+
+ul li.contactEntry:hover {
+	background-color: var(--hover-color);
+	color: var(--main-white-color);
+}
+
+.contactTitle {
+	flex: 1;
+	flex-direction: column;
+	align-self: baseline;
+	width: 5em;
+	padding: 0 2em 0 0;
+}
+
+.contactNode {
+	width: 50px;
+	height: 50px;
 }
 
 .flexcontainer {
@@ -161,6 +195,12 @@ ul li.blogEntry {
 	font-family: 'Coming Soon', cursive;
 }
 
+.contextText {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Coming Soon', cursive;
+}
+
 @media only screen and (max-width: 600px) {
 	.blogText {
 		font-size: 16px;
@@ -168,6 +208,9 @@ ul li.blogEntry {
 	ul li.blogEntry {
 		max-width: 400px;
 		padding: 20px;
+	}
+	ul li.contactEntry {
+		padding: 10px;
 	}
 	body {
 		padding: 30px;
@@ -204,5 +247,9 @@ body, html {
 	flex-shrink: 0;
 	background-color: rgb(75, 70, 74);
 	color: #fff;
+	padding: 20px;
+}
+
+.contact-content {
 	padding: 20px;
 }
