@@ -139,6 +139,9 @@ class App extends React.Component {
 		const current = this.state.currentDisplay;
 		return (
 			<div className='wrapper'>
+			<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet"></link>
+			<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"></link>
+			<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"></link>
 				<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"></link>
 				<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet"></link>
 				<link
