@@ -15,7 +15,7 @@ class GameComponent extends React.Component {
 	state = {
 		//numberOfInvaders, minInvaderSize, maxInvaderSize, minSpeed, maxSpeed, BGMusic
 		gameSettings: {
-			numberOfInvaders: 10,
+			numberOfInvaders: 5,
 			minInvaderSize: 10,
 			maxInvaderSize: 15,
 			minSpeed: 1,

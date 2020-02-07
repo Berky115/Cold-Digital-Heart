@@ -72,7 +72,6 @@ class Blog extends React.Component {
 					<div className="flex-item blogDate"> {entry.datePosted} </div>
 				</div>
 				<div className="titleText">{entry.postTitle}</div>
-
 				<br></br>
 				{entry.postText.map(line => (
 					<div key={line + Math.random()} className="blogText">

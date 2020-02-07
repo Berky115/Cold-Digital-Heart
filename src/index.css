@@ -211,7 +211,11 @@ ul li.contactEntry:hover {
 		padding: 20px;
 	}
 	ul li.contactEntry {
+		max-width: 400px;
 		padding: 10px;
+	}
+	.contextText {
+		font-size: 20px;
 	}
 	body {
 		padding: 30px;
