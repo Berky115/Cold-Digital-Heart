@@ -1,5 +1,12 @@
 { "postsArray" : [
 	{
+		"postTitle" : "Love Snails",
+		"postText" : ["My most recent hackathon was a nostalgic one. Friend and all around good guy Alec Asberslag invited me to join him (remotely!) for the annual San Diego Game Jam event. With so much happening, I wasn't sure what to expect.", "The theme in question was 'Never Give up!' a prudent one that quickly led to an agreement that we WOULd be making a Rick Asterly joke. What's more Alec had his eyes on something involving snails. I can't tell you why...but I will say I'm glad.", "After spending some time hashing out idea's finding fun people to join in our snail based adventure and investing a lot of time in getting our GIT setup just right for everyone, the madness began!", "Tools:",
+			"GitKraken: THIS was one of the bigger wins from the project. While I'm happy to stick to terminal commands, it quickly became apparent that the team would need something visual to help us manage the back and forth that comes with pairing Unity and Git. The ui is simple, easy to follow, and gives you everything you'll need to track down where and when a commit went.", "Fungus: Fungus is an amazing little plug-in for Unity. While it's intended use is for text navigation, it also offered some nice tooling for camera positioning, sound and scene transitioning. I intend to use it on anything Unity based looking forward.", "Unity: The indie standard for the time. Gatta love it.", "When all is said and done, I had a ton of fun. Learning new tools AND meeting new people. Things I've missed since this whole plague started :)",
+			"https://alec-asperslag.itch.io/lovesnails"],
+		"datePosted": "August 24th 2020"
+	},
+	{
 		"postTitle" : "Bold New Decade",
 		"postText" : ["Just a quick post to ring in the new year! Lots too do, many great plans.", "For now though, cheers everyone! Another cycle around the sun :)"],
 		"datePosted": "Jan 16th 2020"

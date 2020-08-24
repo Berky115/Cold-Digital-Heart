@@ -58,6 +58,11 @@ class Projects extends React.Component {
 							<h1>Pit of The Ice King</h1>
 						</a>
 					</li>
+					<li className="project">
+						<a href="https://alec-asperslag.itch.io/lovesnails">
+							<h1>Love Snails</h1>
+						</a>
+					</li>
 				</ul>
 			</div>
 		);

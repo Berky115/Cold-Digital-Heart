@@ -13,7 +13,7 @@ function Invader(speed, radius, positionX, positionY, noteColor) {
 class GameComponent extends React.Component {
 	myRef = React.createRef();
 	state = {
-		//numberOfInvaders, minInvaderSize, maxInvaderSize, minSpeed, maxSpeed, BGMusic
+		//numberOfInvaders, minInvaderSize, maxInvaderSize, minSpeed, maxSpeed
 		gameSettings: {
 			numberOfInvaders: 5,
 			minInvaderSize: 10,
