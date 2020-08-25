@@ -115,10 +115,10 @@ class Contact extends React.Component {
 					<p className="contextText"> andrewfacchiano@gmail.com </p>
 				</li>
 				<li className='contactEntry'>
-					<a href="https://www.linkedin.com/in/andrew-facchiano-0961a761">
+					<a href="https://www.linkedin.com/in/andrew-facchiano-0961a761/">
 						<img className='contactTitle' alt="linked in" src={linkedin} ></img>
 					</a>
-					<p className="contextText"> https://tinyurl.com/sg7z6y2</p>
+					<p className="contextText"> linkedIn</p>
 				</li>
 			</ul>
 		);
