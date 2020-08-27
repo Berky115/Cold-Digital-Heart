@@ -100,7 +100,20 @@ class Blog extends React.Component {
 class Contact extends React.Component {
 	render() {
 		return (
-			<p>Test</p>
+			<ul className='contact-content'>
+				<a href="mailto:andrewfacchiano@gmail.com">
+					<li className='contactEntry'>
+						<img className='contactTitle' alt="e-mail" src={email} ></img>
+						<p className="contextText"> andrewfacchiano@gmail.com </p>
+					</li>
+				</a>
+				<a href="https://www.linkedin.com/in/andrew-facchiano-0961a761/">
+					<li className='contactEntry'>
+						<img className='contactTitle' alt="linked in" src={linkedin} ></img>
+						<p className="contextText"> LinkedIn</p>
+					</li>
+				</a>
+			</ul>
 		);
 	}
 }
