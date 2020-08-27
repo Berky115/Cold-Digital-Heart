@@ -101,25 +101,18 @@ class Contact extends React.Component {
 	render() {
 		return (
 			<ul className='contact-content'>
-				<li className='contactEntry'>
 				<a href="mailto:andrewfacchiano@gmail.com">
-					<img className='contactTitle' alt="e-mail" src={home} ></img>
-					</a>
-					<p className="contextText"> call me <strong>Andrew Facchiano </strong></p>
-				</li>
-
-				<li className='contactEntry'>
-					<a href="mailto:andrewfacchiano@gmail.com">
+					<li className='contactEntry'>
 						<img className='contactTitle' alt="e-mail" src={email} ></img>
-					</a>
-					<p className="contextText"> andrewfacchiano@gmail.com </p>
-				</li>
-				<li className='contactEntry'>
-					<a href="https://www.linkedin.com/in/andrew-facchiano-0961a761/">
+						<p className="contextText"> andrewfacchiano@gmail.com </p>
+					</li>
+				</a>
+				<a href="https://www.linkedin.com/in/andrew-facchiano-0961a761/">
+					<li className='contactEntry'>
 						<img className='contactTitle' alt="linked in" src={linkedin} ></img>
-					</a>
-					<p className="contextText"> linkedIn</p>
-				</li>
+						<p className="contextText"> LinkedIn</p>
+					</li>
+				</a>
 			</ul>
 		);
 	}

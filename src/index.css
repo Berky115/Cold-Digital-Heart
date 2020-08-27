@@ -164,7 +164,6 @@ ul li.contactEntry:hover {
 }
 
 .contactTitle {
-	flex: 1;
 	flex-direction: column;
 	align-self: baseline;
 	width: 5em;
